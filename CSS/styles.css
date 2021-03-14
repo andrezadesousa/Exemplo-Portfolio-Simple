@@ -303,6 +303,18 @@ img{
 .skills_img{
     border-radius: .5rem;
 }
+.skills_gti{
+    width: 90%;
+}
+.skills_front{
+    width: 30%;
+}
+.skills_boot{
+    width: 5%;
+}
+.skills_img{
+    border-radius: .5rem;
+}
 
 /*Work*/
 .work{

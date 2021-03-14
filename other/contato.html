@@ -1,36 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../CSS/style_2.css">
-	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="shortcut icon" href="Image/Flower.ico" type="image/x-icon">
-    <title>Contato</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../Image/Flower.ico" type="image/x-icon">
+    <title>Currículo</title>
 </head>
 <body>
-    <div class="profile-card">
+    <!--Header-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="../other/curriculo.pdf" class="nav_logo" target="_blank" rel="external" >Andreza</a>
+            </div>
 
-		<div class="card-header">
-			<div class="pic">
-				<img src="../Image/perfil.png">
-			</div><!--pic-->
-				<div class="name">Andreza de Sousa</div><!--name-->
-				<div class="desc">Front-end Developer</div><!--desc-->
-				<div class="sm">
-					<a href="https://www.linkedin.com/in/sousa-andreza/"><i class="bx bxl-linkedin"></i></a>
-	        		<a href="https://github.com/andrezadesousa"><i class='bx bxl-github'></i></a>
-				</div><!--sm-->
-					<a href="../index.html" class="contact-btn">Portfólio</a>
-		</div><!--card-header-->
+        </nav><!--nav-->
+    </header>
 
-		<div class="card-footer">
-			<p>Tel.: (11) 99273-9866</p>
-			<p>andrezanascimentodesousa@gmail.com</p><br>
-			<p>&#169;2021 copyright all right reserved</p>
-		</div><!--card-footer-->
+    <main class="l-main">
+        <!--Home-->
+        <section class="home bd-grid" id="home">
+            <div class="home_data">
+                <h1 class="home_title">Hi, <br>I'm <span class="home_title-color">Andreza</span><br>Front-end Developer</h1>
+                <a href="../other/curriculo.pdf" target="_blank" rel="external" class="button">Currículo</a>
+            </div><!--home_data-->
 
-	</div><!--profile-card-->
+            <div class="home_social">
+                <a href="https://www.linkedin.com/in/sousa-andreza/" class="home_social-icon" target="_blank" rel="external"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/andrezadesousa" class="home_social-icon" target="_blank" rel="external"><i class='bx bxl-github'></i></a>
+            </div><!--home_social-->
+
+            <div class="home_img">
+                <img src="../Image/addres.png" alt="">
+            </div><!--home_img-->
+        </section><!--home bd-grid-->
+
+        <!--Cursos-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Cursos</h2>
+
+            <div class="skills_container bd-grid">
+                <div>
+                    <p class="skills_text">A cada dia procuro aprimorar meus conhecimentos e aprender novas tecologias do mundo Front-end, através de cursos e bootcamp!</p>
+                    <p class="about_text">“Para entender recursão, devemos primeiro compreender uma recursão.”<cite>-Autor desconhecido</cite></p>
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxs-school'></i>
+                            <span class="skills_name">Gestão da Tecnologia da Informação</span>
+                        </div><!--skills_names-->
+
+                        <div>
+                            <span class="skills_percentage">90%</span>
+                        </div>
+
+                        <div class="skills_bar skills_gti"></div><!--skills_bar-->
+                    </div><!--skills_data-->
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bx-minus-front' ></i>
+                            <span class="skills_name">Curso Webmaster Front-End Completo</span>
+                        </div><!--skills_names-->
+
+                        <div>
+                            <span class="skills_percentage">30%</span>
+                        </div>
+                        
+                        <div class="skills_bar skills_front"></div><!--skills_bar-->
+                    </div><!--skills_data-->
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-javascript' ></i>
+                            <span class="skills_name">JavaScript Completo</span>
+                        </div><!--skills_names-->
+
+                        <div>
+                            <span class="skills_percentage">10%</span>
+                        </div>
+                        
+                        <div class="skills_bar skills_js"></div><!--skills_bar-->
+                    </div><!--skills_data-->
+
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-bootstrap' ></i>
+                            <span class="skills_name">Bootstrap Completo</span>
+                        </div><!--skills_names-->
+
+                        <div>
+                            <span class="skills_percentage">5%</span>
+                        </div>
+                        
+                        <div class="skills_bar skills_boot"></div><!--skills_bar-->
+                    </div><!--skills_data-->
+                </div>
+
+                <div>
+                    <img src="../Image/estudo.jpg" alt="" class="skills_img">
+                </div>
+            </div><!--skills_container bd-grid-->
+        </section>
+
+		<!--Projetos-->
+        <section class="work ssection" id="work">
+            <h2 class="section-title">Projetos Acadêmicos</h2>
+
+            <div class="work_container bd-grid">
+
+                <div class="work_img">
+                    <img src="../Image/work10.jpg" alt="">
+                </div><!--work_img-->
+
+                <div class="work_img">
+                    <img src="../Image/work7.jpg" alt="">
+                </div><!--work_img-->
+
+                <div class="work_img">
+                    <img src="../Image/work8.jpg" alt="">
+                </div><!--work_img-->
+
+            </div><!--work_container bd-grid-->
+        </section>      
+
+    </main><!--l-main-->
+
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <p class="footer_title">Andreza</p>
+        <a style="color: #fff;" href="mailto:andrezanascimentodesousa@gmail.com?subject=Questions" target="_blank" rel="external">andrezanascimentodesousa@gmail.com</a> 
+        <address>
+            Carapicuíba, SP - Brasil
+        </address>
+        <div class="footer_social">
+            <a href="https://www.linkedin.com/in/sousa-andreza/" class="footer_icon" target="_blank" rel="external"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" class="footer_icon"><i class="bx bxl-instagram" target="_blank" rel="external"></i></a>
+            <a href="https://github.com/andrezadesousa" class="footer_icon" target="_blank" rel="external"><i class='bx bxl-github'></i></a>
+        </div><!--footer_social-->
+        <p>&#169;2021 copyright all right reserved</p>
+    </footer>
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Main Js-->
+    <script src="../Js/main.js"></script>
 </body>
 </html>
