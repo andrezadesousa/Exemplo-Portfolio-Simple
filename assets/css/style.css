@@ -393,11 +393,11 @@ img{
         height: 110%;
     }
     #content-container h2{
-        color: #F50057;
         font-weight: 900;
-        font-size: 80px;
+        font-size: 55px;
         line-height: 0.9em;
         margin-bottom: 30px;
+        text-align: center;
     }
     #content-container p{
         line-height: 1.8em;
@@ -477,8 +477,35 @@ img{
         margin-right: auto;
     }
 }
-@media screen and (max-width: 515px){
+@media screen and (max-width: 908px){
     #logo h1{
         font-size: 23px;
     }
+    #content-container h2{
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    #content-container .button{
+        padding: 16px 0px;
+        font-size: 16px;
+        width: 120px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .skills_img{
+        display: none;
+    }
+    .skills_img-curso{
+        display: none;
+    }
+    #content-container h2{
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
 }
