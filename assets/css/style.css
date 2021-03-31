@@ -495,7 +495,7 @@ img{
     }
 
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 515px){
     .skills_img{
         display: none;
     }
@@ -503,9 +503,25 @@ img{
         display: none;
     }
     #content-container h2{
-        font-weight: 900;
         font-size: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 400px;
+    }
+    #content-container p{
+        position: absolute;
+        margin-bottom: 200px;
+        text-align: justify;
+       margin-right: 20px;
+    }
+    #bg-container svg{
+        width: 110%;
+        height: 120%;
+        margin-left: -25%;
+    }
+    #content-container .button{
+        margin-top: 400px;
+        margin-left: 30%;
+        position: absolute;
+        cursor: pointer;
     }
 
 }
