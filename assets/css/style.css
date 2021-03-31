@@ -132,24 +132,23 @@ img{
 #content-container button{
     border: none;
     outline: none;
-    color: #FFF;
     background-color: #F50057;
     padding: 16px 0px;
     border-radius: 40px;
-    font-size: 16px;
-    width: 160px;
-    margin-top: 30px;
+    font-size: 15px;
+    width: 140px;
+    margin-top: 20px;
     cursor: pointer;
 }
 #content-container button:hover{
-    opacity: 0.9;
+    opacity: 0.7;
 }
 #content-container a{
     color: #FFF;
 }
 #logo{
     font-style: italic;
-    font-size: 25px;
+    font-size: 15px;
 }
 #logo span{
     color: #F50057;
@@ -409,6 +408,21 @@ img{
     #content-container p{
         line-height: 1.8em;
         font-weight: 500;
+    }
+    #logo{
+        font-style: italic;
+        font-size: 25px;
+    }
+    #content-container .button{
+        border: none;
+        outline: none;
+        background-color: #F50057;
+        padding: 16px 0px;
+        border-radius: 40px;
+        font-size: 16px;
+        width: 160px;
+        margin-top: 30px;
+        cursor: pointer;
     }
 
     .nav{
