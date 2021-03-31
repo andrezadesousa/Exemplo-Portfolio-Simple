@@ -76,11 +76,11 @@ img{
     justify-content: space-evenly;
     align-items: center;
 }
-#header #logo{
+#logo{
     font-style: italic;
-    font-size: 20px;
+    font-size: 25px;
 }
-#header #logo span{
+#logo span{
     color: #F50057;
 }
 #header nav{
@@ -136,7 +136,7 @@ img{
     padding: 16px 0px;
     border-radius: 40px;
     font-size: 15px;
-    width: 140px;
+    width: 160px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -146,13 +146,7 @@ img{
 #content-container a{
     color: #FFF;
 }
-#logo{
-    font-style: italic;
-    font-size: 15px;
-}
-#logo span{
-    color: #F50057;
-}
+
 /*Variáveis*/
 /*Layout*/
 .bd-grid{
@@ -481,5 +475,10 @@ img{
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
+    }
+}
+@media screen and (max-width: 515px){
+    #logo h1{
+        font-size: 23px;
     }
 }
