@@ -519,5 +519,17 @@ img{
         font-size: 40px;
         margin-bottom: 20px;
     }
+    #content-container p{
+        height: 510%;
+    }
+    #content-container .button{
+        margin-top: 210px;
+        margin-bottom: -5%;
+        position: absolute;
+        cursor: pointer;
+    }
+    #skills{
+        margin-top: -180px;
+    }
 
 }
