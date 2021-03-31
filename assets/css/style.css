@@ -485,7 +485,6 @@ img{
         font-weight: 900;
         font-size: 40px;
         margin-bottom: 20px;
-        height: 110%;
     }
     #content-container .button{
         padding: 16px 0px;
@@ -493,17 +492,6 @@ img{
         width: 120px;
         margin-top: 5px;
         cursor: pointer;
-    }
-    #skills{
-        margin-top: -180px;
-    }
-    #content-container p{
-        height: 510%;
-    }
-    #bg-container svg{
-        width: 110%;
-        height: 80%;
-        margin-left: 9%;
     }
 
 }
@@ -518,15 +506,6 @@ img{
         font-weight: 900;
         font-size: 40px;
         margin-bottom: 20px;
-    }
-    #content-container p{
-        height: 510%;
-    }
-    #content-container .button{
-        margin-top: 210px;
-        margin-bottom: -5%;
-        position: absolute;
-        cursor: pointer;
     }
 
 }
