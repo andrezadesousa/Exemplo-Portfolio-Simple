@@ -500,6 +500,11 @@ img{
     #content-container p{
         height: 510%;
     }
+    #bg-container svg{
+        width: 110%;
+        height: 80%;
+        margin-left: 9%;
+    }
 
 }
 @media screen and (max-width: 515px){
