@@ -527,16 +527,3 @@ img{
     }
 
 }
-@media screen and (max-width: 400px){
-    #content-container p{
-        position: absolute;
-        margin-bottom: 200px;
-        text-align: justify;
-       margin-right: 20px;
-    }
-    #bg-container svg{
-        width: 110%;
-        height: 120%;
-        margin-left: -25%;
-    }
-}
