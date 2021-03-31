@@ -539,10 +539,4 @@ img{
         height: 120%;
         margin-left: -25%;
     }
-    #content-container .button{
-        margin-top: 400px;
-        margin-left: 30%;
-        position: absolute;
-        cursor: pointer;
-    }
 }
