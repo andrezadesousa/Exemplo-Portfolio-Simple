@@ -6,7 +6,7 @@
     --font-semi: 600;
 }
 :root{
-    --first-color: #F50057;
+    --first-color: #00B0FF;
     --second-color: #000;
 }
 :root{
@@ -81,7 +81,7 @@ img{
     font-size: 25px;
 }
 #logo span{
-    color: #F50057;
+    color: var(--first-color);
 }
 #header nav{
     color: #000;
@@ -118,7 +118,7 @@ img{
     justify-content: center;
 }
 #content-container h2{
-    color: #F50057;
+    color: var(--first-color);
     font-weight: 900;
     font-size: 60px;
     line-height: 0.9em;
@@ -132,7 +132,7 @@ img{
 #content-container button{
     border: none;
     outline: none;
-    background-color: #F50057;
+    background-color: var(--first-color);
     padding: 16px 0px;
     border-radius: 40px;
     font-size: 15px;
@@ -184,7 +184,7 @@ img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color:#FFFAFA;
+        background-color: #e2f1f5;
         transition: .5s;
     }
 }
@@ -328,18 +328,11 @@ img{
 }
 .skills_img{
     border-radius: .5rem;
-}
-.skills_img-curso{
-    border-radius: .5rem;
-}
-.skills_gti{
-    width: 90%;
-}
-.skills_front{
-    width: 30%;
+    width: 80%;
+    height: 70%;
 }
 .skills_boot{
-    width: 5%;
+    width: 15%;
 }
 
 /*Work*/
@@ -389,8 +382,8 @@ img{
         margin: 0;
     }
     #bg-container svg{
-        width: 100%;
-        height: 110%;
+        width: 70%;
+        height: 100%;
     }
     #content-container h2{
         font-weight: 900;
@@ -410,7 +403,7 @@ img{
     #content-container .button{
         border: none;
         outline: none;
-        background-color: #F50057;
+        background-color: var(--first-color);
         padding: 16px 0px;
         border-radius: 40px;
         font-size: 16px;
@@ -439,7 +432,7 @@ img{
     }
     .nav_link-projeto{
         color: var(--second-color);
-        background: #F50057;
+        background: var(--first-color);
         padding: 10px 20px;
         margin-left: 30px;
         border-radius: 30px;
@@ -462,6 +455,11 @@ img{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
         text-align: initial;
+    }
+    .skills_img{
+        border-radius: .5rem;
+        width: 100%;
+        height: 100%;
     }
 
     .work_container{
@@ -506,11 +504,8 @@ img{
     }
 
 }
-@media screen and (max-width: 515px){
+@media screen and (max-width: 760px){
     .skills_img{
-        display: none;
-    }
-    .skills_img-curso{
         display: none;
     }
     #content-container h2{
