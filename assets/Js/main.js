@@ -53,3 +53,5 @@ sr.reveal('.skills_img-curso', {delay: 400})
 
 //Scroll work
 sr.reveal('.work_img',{interval: 200})
+
+
