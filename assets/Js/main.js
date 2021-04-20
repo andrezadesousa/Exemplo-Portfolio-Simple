@@ -48,7 +48,6 @@ sr.reveal('.skills_subtitle',{})
 sr.reveal('.skills_text',{delay: 200})
 sr.reveal('.skills_data',{interval: 200})
 sr.reveal('.skills_img',{delay: 400})
-sr.reveal('.skills_img-curso', {delay: 400})
 
 
 //Scroll work
