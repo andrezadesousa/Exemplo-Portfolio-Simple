@@ -323,9 +323,7 @@ img{
 .skills_js{
     width: 10%;
 }
-.skills_ui{
-    width: 5%;
-}
+
 .skills_img{
     border-radius: .5rem;
     width: 80%;
@@ -333,6 +331,75 @@ img{
 }
 .skills_boot{
     width: 15%;
+}
+
+/*Curso*/
+.curso_container{
+    row-gap: 2rem;
+    text-align: center;
+}
+.curso_subtitle{
+    margin-bottom: var(--mb-2);
+}
+.curso_text{
+    margin-bottom: var(--mb-4);
+}
+.curso_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: .5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+.curso_icon{
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: var(--first-color);
+}
+.curso_names{
+    display: flex;
+    align-items: center;
+}
+.curso_names a{
+    display: flex;
+    align-items: center;
+    color: var(--second-color);
+}
+.curso_bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: var(--z-back);
+}
+.curso_gti{
+    width: 95%;
+}
+.curso_js{
+    width: 10%;
+}
+.curso_fJs{
+    width: 100%;
+}
+.curso_front{
+    width: 30%;
+}
+.curso_log{
+    width: 80%;
+}
+.curso_ui{
+    width: 5%;
+}
+.curso_img{
+    border-radius: .5rem;
+    width: 80%;
+    height: 70%;
 }
 
 /*Work*/
@@ -462,6 +529,17 @@ img{
         height: 100%;
     }
 
+    .curso_container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: initial;
+    }
+    .curso_img{
+        border-radius: .5rem;
+        width: 100%;
+        height: 100%;
+    }
+
     .work_container{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -497,6 +575,9 @@ img{
     #skills{
         margin-top: -180px;
     }
+    #curso{
+        margin-top: -180px;
+    }
     #bg-container svg{
         width: 110%;
         height: 80%;
@@ -506,6 +587,9 @@ img{
 }
 @media screen and (max-width: 760px){
     .skills_img{
+        display: none;
+    }
+    .curso_img{
         display: none;
     }
     #content-container h2{
