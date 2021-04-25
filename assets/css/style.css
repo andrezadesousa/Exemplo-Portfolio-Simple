@@ -323,14 +323,13 @@ img{
 .skills_js{
     width: 10%;
 }
-
+.skills_boot{
+    width: 10%;
+}
 .skills_img{
     border-radius: .5rem;
     width: 80%;
     height: 70%;
-}
-.skills_boot{
-    width: 15%;
 }
 
 /*Curso*/
