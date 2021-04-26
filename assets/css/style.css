@@ -4,38 +4,24 @@
 :root{
     --header-height: 3rem;
     --font-semi: 600;
-}
-:root{
     --first-color: #00B0FF;
     --second-color: #000;
-}
-:root{
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
-}
-:root{
     --mb-1: 0.5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
     --mb-4: 2rem;
     --mb-5: 2.5rem;
     --mb-6: 3rem;
-}
-:root{
     --z-back: -10;
     --z-normal: 1;
     --z-tooltip: 10;
     --z-fixed: 100;
 }
-@media screen and (min-width: 768px){
-    :root{
-        --big-font-size: 3.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-    }
-}
+
 *,::before,::after{
     box-sizing:border-box;
 }
@@ -64,6 +50,15 @@ img{
     height: auto;
     display: block;
 }
+
+@media screen and (min-width: 768px){
+    :root{
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+    }
+}
+
 
 /*#Id*/
 #header{
@@ -394,6 +389,9 @@ img{
 }
 .curso_ui{
     width: 5%;
+}
+.curso_tpScript{
+    width: 4%;
 }
 .curso_img{
     border-radius: .5rem;
