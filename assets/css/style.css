@@ -4,7 +4,7 @@
 :root{
     --header-height: 3rem;
     --font-semi: 600;
-    --first-color: #00B0FF;
+    --first-color: #0000FF;
     --second-color: #000;
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
@@ -105,12 +105,17 @@ img{
 #bg-container svg{
     width: 100%;
     height: 110%;
+    position: relative;
+    right: 50%;
 }
 #content-container{
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    left: 50%;
+
 }
 #content-container h2{
     color: var(--first-color);
@@ -118,13 +123,14 @@ img{
     font-size: 60px;
     line-height: 0.9em;
     margin-bottom: 30px;
+    
 }
 #content-container p{
     line-height: 1.5em;
     font-weight: 400;
     text-align: justify;
 }
-#content-container button{
+/* #content-container button{
     border: none;
     outline: none;
     background-color: var(--first-color);
@@ -134,10 +140,11 @@ img{
     width: 160px;
     margin-top: 20px;
     cursor: pointer;
+ 
 }
 #content-container button:hover{
     opacity: 0.7;
-}
+} */
 #content-container a{
     color: #FFF;
 }
@@ -179,7 +186,7 @@ img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: #e2f1f5;
+        background-color: #fdfdfd;
         transition: .5s;
     }
 }
@@ -321,79 +328,7 @@ img{
 .skills_boot{
     width: 11%;
 }
-.skills_img{
-    border-radius: .5rem;
-    width: 80%;
-    height: 70%;
-}
-
-/*Curso*/
-.curso_container{
-    row-gap: 2rem;
-    text-align: center;
-}
-.curso_subtitle{
-    margin-bottom: var(--mb-2);
-}
-.curso_text{
-    margin-bottom: var(--mb-4);
-}
-.curso_data{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-weight: var(--font-semi);
-    padding: .5rem 1rem;
-    margin-bottom: var(--mb-4);
-    border-radius: .5rem;
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
-}
-.curso_icon{
-    font-size: 2rem;
-    margin-right: var(--mb-2);
-    color: var(--first-color);
-}
-.curso_names{
-    display: flex;
-    align-items: center;
-}
-.curso_names a{
-    display: flex;
-    align-items: center;
-    color: var(--second-color);
-}
-.curso_bar{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: var(--first-color);
-    height: .25rem;
-    border-radius: .5rem;
-    z-index: var(--z-back);
-}
-.curso_gti{
-    width: 95%;
-}
-.curso_js{
-    width: 10%;
-}
-.curso_fJs{
-    width: 100%;
-}
-.curso_front{
-    width: 30%;
-}
-.curso_log{
-    width: 80%;
-}
-.curso_ui{
-    width: 5%;
-}
-.curso_tpScript{
-    width: 4%;
-}
-.curso_img{
+#skills_img{
     border-radius: .5rem;
     width: 80%;
     height: 70%;
@@ -407,7 +342,7 @@ img{
     row-gap: 2rem;
 }
 .work_img{
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    box-shadow: 0 4px 25px rgba(203, 210, 214, 0.15);
     border-radius: .5rem;
     overflow: hidden;
 }
@@ -495,11 +430,14 @@ img{
         color: var(--second-color);
     }
     .nav_link-projeto{
-        color: var(--second-color);
+        color: white;
         background: var(--first-color);
         padding: 10px 20px;
         margin-left: 30px;
         border-radius: 30px;
+    } 
+    .nav_link-projeto:hover{
+        opacity: 0.7;
     }
     .nav_link-projeto:hover::after{
             display: none;
@@ -520,7 +458,7 @@ img{
         align-items: center;
         text-align: initial;
     }
-    .skills_img{
+    #skills_img{
         border-radius: .5rem;
         width: 100%;
         height: 100%;
@@ -583,7 +521,7 @@ img{
 
 }
 @media screen and (max-width: 760px){
-    .skills_img{
+    #skills_img{
         display: none;
     }
     .curso_img{
