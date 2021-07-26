@@ -23,6 +23,34 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*Scroll sections active link*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*SHOW SCROLL TOP*/ 
+function scrollTop(){
+    const scrollTop = document.getElementById('scroll-top');
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollTop)
+
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -63,44 +91,32 @@ function removeScale(){
     document.body.classList.remove('scale-cv')
 }
 
-//Scroll reveal
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+//Generate PDF
+//PDF generate area
+let areaCv = document.getElementById('area-cv')
+let resumeButton = document.getElementById('resume-button')
+
+//Html2pdf options
+let opt = {
+    margin:       0,
+    filename:     'myResume.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 4 },
+    jsPDF:        { format: 'a4', orientation: 'portrait' }
+  };
+//Function to call areaCv and Html2pdf options
+function generateResume(){
+    html2pdf(areaCv, opt)
+}
+
+//When the button is clicked, it executes the three functions
+resumeButton.addEventListener('click', () => {
+    //1. The class .scale-cv is added to the body, where it reduces the size of the elements
+    scaleCv()
+
+    //2 The PDF is generated
+    generateResume()
+
+    //The .scale-cv class is removed from the body after 5 seconds to return to normal size
+    setTimeout(removeScale, 5000)
 })
-
-//Scroll home
-sr.reveal('#container',{})
-sr.reveal('#bg-container', {delay: 400})
-
-//Scroll about
-sr.reveal('.about_img',{})
-sr.reveal('.about_subtitle',{delay: 200})
-sr.reveal('.about_text',{delay: 400})
-
-//Scroll Skills
-sr.reveal('.skills_subtitle',{})
-sr.reveal('.skills_text',{delay: 200})
-sr.reveal('.skills_data',{interval: 200})
-sr.reveal('.img_skills',{delay: 400})
-sr.reveal('.title-skills',{delay: 400})
-sr.reveal('.work-text',{delay: 400})
-sr.reveal('.education-text',{delay: 200})
-sr.reveal('.education_content',{interval: 200})
-
-//Scroll work
-sr.reveal('.work_img',{interval: 200})
-
-/*-- ANIMATE GSAP --*/
-
-/*TEXT*/ 
-gsap.from('.home_title', {opacity: 0, duration: 1.5, delay: .5, y: 50})
-gsap.from('.home_description', {opacity: 0, duration: 1.5, delay: .8, y: 50})
-gsap.from('.social', {opacity: 0, duration: 2, delay: 1.2, y: -40})
-gsap.from('.home_scroll', {opacity: 0, duration: 1.5, delay: 2.3, y: 30})
-
-/*-- ANIMATE SCROLLMAGIC --*/
-var animate = new TimelineMax({onUpdate:updatePercentage})
-var  controller = new ScrollMagic.Controller()
