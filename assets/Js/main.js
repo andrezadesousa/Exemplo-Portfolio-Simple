@@ -1,55 +1,64 @@
-/*Show Menu*/
-const showMenu = (toggleId, navId) =>{
+/*Show MENU*/
+const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
 
+    //Validate that variables exist
     if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
+        toggle.addEventListener('click', () => {
+            //add the show-menu class to the div tag with the nav_menu class
+            nav.classList.toggle('show-menu')
         })
     }
 }
 showMenu('nav-toggle','nav-menu')
 
-/*Active and remove menu*/
+/*Remove Menu Mobile*/
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
-    //Active link
-    navLink.forEach(n => n.classList.remove('active'))
-    this.classList.add('active')
-
-    //Remove menu mobile
     const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
 }
-
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-//Scroll reveal
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+/*==================== DARK LIGHT THEME ====================*/ 
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-//Scroll home
-sr.reveal('#container',{})
-sr.reveal('#bg-container', {delay: 400})
+//Reduce the size and print on an A4 sheet
+function scaleCv(){
+    document.body.classList.add('scale-cv')
+}
 
-//Scroll about
-sr.reveal('.about_img',{})
-sr.reveal('.about_subtitle',{delay: 200})
-sr.reveal('.about_text',{delay: 400})
-
-//Scroll Skills
-sr.reveal('.skills_subtitle',{})
-sr.reveal('.skills_text',{delay: 200})
-sr.reveal('.skills_data',{interval: 200})
-sr.reveal('.skills_img',{delay: 400})
-
-//Scroll work
-sr.reveal('.work_img',{interval: 200})
-
-
+//remove the size when the cv is download
+function removeScale(){
+    document.body.classList.remove('scale-cv')
+}
