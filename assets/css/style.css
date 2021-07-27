@@ -458,13 +458,12 @@ body.dark-theme{
     width: 10%;
 }
 /*=================WORK==================*/
-.work-text{
+.title-work{
     font-size: var(--h1-font-size);
-    color: var(--title-color);
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: -10%;
-    padding: 0 6rem 10% 0; 
+    padding: 0 6rem 10% 0;
 }
 
 .work{
