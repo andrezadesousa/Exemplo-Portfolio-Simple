@@ -316,7 +316,7 @@ body.dark-theme{
     gap: 3rem;
     display: inline;
     margin-top: -10%;
-    padding: 0 39rem 1rem;
+    padding: 0 40rem 1rem;
     display: flex;
     flex-direction: initial;
     text-align: center;
@@ -506,8 +506,11 @@ body.dark-theme{
 }
 .footer_icon{
     font-size: 1.5rem;
-    color: var(--first-color);
+    color: var(--title-color);
     margin: 0 var(--mb-2);
+}
+.footer_icon:hover{
+    color: var(--second-color);
 }
 /*=================MEDIA QUERIES==================*/
 @media screen and (min-width: 768px){
@@ -611,7 +614,7 @@ body.dark-theme{
 
     .social_container{
         margin-top: -30%;
-        padding: 0 7.5rem 0;
+        padding: 0 8.5rem 0;
         display: flex;
     }
 
