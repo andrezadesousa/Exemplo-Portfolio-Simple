@@ -86,7 +86,6 @@ sr.reveal('.skills_text',{delay: 200})
 sr.reveal('.skills_data',{interval: 200})
 sr.reveal('.img_skills',{delay: 400})
 sr.reveal('.title-skills',{delay: 400})
-sr.reveal('.work-text',{delay: 400})
 sr.reveal('.education-text',{delay: 200})
 sr.reveal('.education_content',{interval: 200})
 
