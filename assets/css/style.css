@@ -580,7 +580,7 @@ body.dark-theme{
 
 }
 
-@media screen and (max-width: 768px){  
+@media screen and (max-width: 1024px){  
     .header-desk{
         display: none;
     }
@@ -632,9 +632,9 @@ body.dark-theme{
     }
     
 }
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .bd-grid-desk {
       margin-left: auto;
       margin-right: auto;
     }
-}
+} */
